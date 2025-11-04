@@ -8,7 +8,7 @@ public class MyWorld extends World {
         addObject(bob, 100, 100);
         
         Apple apple = new Apple();
-        addObject(apple, 400, 100);
+        addObject(apple, 500, 100);
         
     }
 }

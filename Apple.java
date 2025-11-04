@@ -1,24 +1,28 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; 
 
 public class Apple extends Actor
 {
     public void act()
     {
+        //constant movement left
         move(-10);
         
+        //if apple reaches the end of the screen it is reset
         if(getX()<= 0)
         {
             resetApple();
         }
         
+        //ends game when apple touches the player 
         if(isTouching(Hero.class))
         {
             Skull skull = new Skull();
-            getWorld().addObject(skull, 300, 150);
+            getWorld().addObject(skull, 300, 200);
             getWorld().removeObject(this);
         }
     }
     
+    //gets a random position when the projectile resets
     public void resetApple()
     {
         int num = Greenfoot.getRandomNumber(2);

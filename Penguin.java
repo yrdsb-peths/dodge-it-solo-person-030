@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
-public class Hero extends Actor
+public class Penguin extends Actor
 {
     //checks if player is on top
     boolean atTop = true;

@@ -1,6 +1,6 @@
 import greenfoot.*; 
 
-public class Apple extends Actor
+public class Bomb extends Actor
 {
     public void act()
     {
@@ -10,11 +10,11 @@ public class Apple extends Actor
         //if apple reaches the end of the screen it is reset
         if(getX()<= 0)
         {
-            resetApple();
+            resetBomb();
         }
         
         //ends game when apple touches the player 
-        if(isTouching(Hero.class))
+        if(isTouching(Penguin.class))
         {
             Skull skull = new Skull();
             getWorld().addObject(skull, 300, 200);
@@ -23,7 +23,7 @@ public class Apple extends Actor
     }
     
     //gets a random position when the projectile resets
-    public void resetApple()
+    public void resetBomb()
     {
         int num = Greenfoot.getRandomNumber(2);
         

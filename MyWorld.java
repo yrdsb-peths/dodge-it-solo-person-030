@@ -5,12 +5,12 @@ public class MyWorld extends World {
         super(600, 400, 1);
         
         //add and create bob Hero
-        Hero bob = new Hero();
-        addObject(bob, 100, 100);
+        Penguin penguin = new Penguin();
+        addObject(penguin, 100, 100);
         
         //add and create projectile enemy
-        Apple apple = new Apple();
-        addObject(apple, 500, 100);
+        Bomb bomb = new Bomb();
+        addObject(bomb, 500, 100);
         
     }
 }

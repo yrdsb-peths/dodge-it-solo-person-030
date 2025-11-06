@@ -5,7 +5,7 @@ public class Bomb extends Actor
     public void act()
     {
         //constant movement left
-        move(-10);
+        move(-90);//made on main
         
         //if apple reaches the end of the screen it is reset
         if(getX()<= 0)
